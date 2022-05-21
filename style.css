@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mate SC', serif;
+}
+body {
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://image.freepik.com/free-vector/coronavirus-outbreak-covid-19-design-with-falling-virus-cell-dark-background_34645-954.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+}
+.heading {
+    margin-top: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.container {
+    margin-top: 1rem;
+}
+.board {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 30px;
+    row-gap: 30px;
+    align-content: center;
+    background-color: #f6f5f0;
+    box-shadow: 5px 10px 8px -9px rgb(0 0 0 / 75%);
+    padding: 30px;
+    border-radius: 24px;
+}
+.card {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+}
+.card span {
+    font-weight: bold;
+}
+.board .card1 {
+    background-image: linear-gradient(#00c9ff, #92fe9d);
+}
+.board .card1 img {
+    width: 50px;
+    height: 30px;
+}
+.board .card2 {
+    background-image: linear-gradient(#2c3e50, #fd746c);
+}
+.board .card3 {
+    background-image: linear-gradient(#f46b45, #eea849);
+}
+.board .card4 {
+    background-image: linear-gradient(#4ca1af, #c4e0e5);
+}
+.board .card5 {
+    background-image: linear-gradient(#a770ef, #cf8bf3, #fdb99b);
+}
+.board .card6 {
+    background-image: linear-gradient(#ffd89b, #19547b);
+}
+.board .card7 {
+    background-image: linear-gradient(#f79d00, #64f38c);
+}
+.board .card8 {
+    background-image: linear-gradient(#ff5f6d, #ffc371);
+}
+.board .card9 {
+    background-image: linear-gradient(#114357, #f29492);
+}
+.board .card10 {
+    background-image: linear-gradient(#000000, #434343);
+}
+.board .card11 {
+    background-image: linear-gradient(#2980b9, #2c3e50);
+}
+.board .card12 {
+    background-image: linear-gradient(#0b486b, #f56217);
+}
+
+@media screen and (max-width : 800px) {
+    .board {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+@media screen and (max-width : 550px) {
+    .board {
+        grid-template-columns: repeat(2, auto);
+    }
+}
